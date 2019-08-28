@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Suite1" verbose="1" >
-  <test name="Tests" >
+ <test name="Tests" >
     <classes>
-       <class name="eduapp.WebTest" />
+       <class name="com.eduapp.test.ChromeTest" />
+       <class name="com.eduapp.test.FireFoxTest" />
     </classes>
   </test>
  
@@ -12,4 +13,4 @@
       <class name="test.sample.ParameterTest"/>
     </classes>
   </test> -->
-</suite>
+</suite> 
