@@ -5,7 +5,7 @@ mkdir /opt/docker
 From tomcat:8-jre8 
 
 # Maintainer
-MAINTAINER "valaxytech" 
+MAINTAINER "nitikavi" 
 
 # copy war file on to container 
-COPY ./webapp.war /usr/local/tomcat/webapps
+COPY ./eduapp.war /usr/local/tomcat/webapps
