@@ -8,6 +8,12 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>eduapp Maven Webapp</name>
 	<url>http://maven.apache.org</url>
+	
+		<properties>
+    <org.springframework.version>3.2.8.RELEASE</org.springframework.version>
+    <!-- <org.springframework.version>4.0.2.RELEASE</org.springframework.version> -->
+</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>junit</groupId>
@@ -33,6 +39,15 @@
 			<version>6.8</version>
 			<!-- <scope>test</scope> -->
 		</dependency>
+	
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>${org.springframework.version}</version>
+    <scope>runtime</scope>
+</dependency>
+		
+		
 	</dependencies>
 	<build>
 		 <sourceDirectory>src</sourceDirectory> 
