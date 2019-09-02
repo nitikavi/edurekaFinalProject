@@ -21,7 +21,7 @@ public class TestGrid {
 	@BeforeTest
      public void setUp() throws MalformedURLException {
          baseURL = "http://demo.guru99.com/test/guru99home/";
-         nodeURL = "http://18.221.233.3:4444/wd/hub";
+         nodeURL = "http://13.58.169.106:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
          capability.setBrowserName("chrome");
          capability.setPlatform(Platform.LINUX);
