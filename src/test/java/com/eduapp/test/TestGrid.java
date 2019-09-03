@@ -22,6 +22,7 @@ public class TestGrid {
      public void setUp() throws MalformedURLException {
 		//System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite"));
 		System.out.println("System.getProperty(suiteXmlFile) "+System.getProperty("suiteXmlFile")); 
+		System.out.println("getClass "+this.getClass()); 
 
 		baseURL = "http://demo.guru99.com/test/guru99home/";
          nodeURL = "http://13.58.169.106:4444/wd/hub";
