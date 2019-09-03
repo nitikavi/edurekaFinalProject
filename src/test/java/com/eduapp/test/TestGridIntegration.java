@@ -20,8 +20,9 @@ public class TestGridIntegration {
 
 	@BeforeTest
      public void setUp() throws MalformedURLException {
-		 System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
-			System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
+		System.out.println("getClass "+this.getClass());  
+		System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
+		System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
 
 		 baseURL = "http://amazon.com";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
