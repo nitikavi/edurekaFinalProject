@@ -24,7 +24,7 @@ public class TestGridIntegration {
 		System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
 		System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
 
-		 baseURL = "https://www.amazon.com";
+		 baseURL = "http://www.youtube.com";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
          capability.setBrowserName("chrome");
@@ -41,7 +41,7 @@ public class TestGridIntegration {
      public void sampleTest() {
          driver.get(baseURL);
          System.out.println("driver.getCurrentUrl() "+driver.getCurrentUrl()); 
-         System.out.println("driver.getPageSource().contains(\"Amazon\") "+driver.getPageSource().contains("Amazon")); 
+         System.out.println("driver.getPageSource().contains(\"Youtube\") "+driver.getPageSource().contains("Youtube")); 
          if (driver.getPageSource().contains("Amazon")) {
              AssertJUnit.assertTrue( "Amazon Found", true);
          } else {
