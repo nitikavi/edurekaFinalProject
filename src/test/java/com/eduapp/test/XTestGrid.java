@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-public class TestGrid {
+public class XTestGrid {
 	 WebDriver driver;
      String baseURL, nodeURL;
 
