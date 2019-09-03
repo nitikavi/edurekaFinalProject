@@ -2,9 +2,7 @@
 <suite name="Suite1" verbose="1" >
  <test name="Tests" >
     <classes>
-      <!--  <class name="com.eduapp.test.ChromeTest" />
-       <class name="com.eduapp.test.FireFoxTest" /> -->
-       <class name="com.eduapp.test.TestGridRegression" />
+        <class name="com.eduapp.test.TestGridRegression" />
     </classes>
   </test>
  
