@@ -59,7 +59,7 @@
 				<version>2.19.1</version>
 				 <configuration>
         	     	<suiteXMLFiles>
-        		 		<suiteXMLFile>regressiontestng.xml</suiteXMLFile>
+        		 		<suiteXMLFile>${surefire.suiteXmlFiles}</suiteXMLFile>
 		      	    </suiteXMLFiles>
         		</configuration>
 			</plugin>
