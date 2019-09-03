@@ -21,7 +21,7 @@ public class TestGridRegression {
 	@BeforeTest
      public void setUp() throws MalformedURLException {
          baseURL = "http://yahoo.com";
-         nodeURL = "http://13.58.169.106:4444/wd/hub";
+         nodeURL = "http://3.17.73.82:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
          capability.setBrowserName("chrome");
          capability.setPlatform(Platform.LINUX);
