@@ -22,7 +22,7 @@ public class TestGridIntegration {
      public void setUp() throws MalformedURLException {
 		System.out.println("getClass "+this.getClass());  
 		System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
-		System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
+		System.out.println("System.getProperty(testSuite) "+System.getProperty("surefire.suiteXmlFiles")); 
 
 		 baseURL = "http://www.youtube.com";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
