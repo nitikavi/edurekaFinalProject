@@ -24,7 +24,7 @@ public class TestGridIntegration {
 		System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
 		System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
 
-		 baseURL = "http://amazon.com";
+		 baseURL = "https://www.amazon.com";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
          capability.setBrowserName("chrome");
