@@ -20,9 +20,7 @@ public class TestGridRegression {
 
 	@BeforeTest
      public void setUp() throws MalformedURLException {
-		 System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
-			System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
-			System.out.println("getClass "+this.getClass()); 
+		 System.out.println("getClass "+this.getClass()); 
 		 baseURL = "http://yahoo.com";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
@@ -41,10 +39,10 @@ public class TestGridRegression {
          driver.get(baseURL);
          
 
-         if (driver.getPageSource().contains("MOBILE TESTING")) {
-             AssertJUnit.assertTrue( "Mobile Testing Link Found", true);
+         if (driver.getPageSource().contains("Yahoo")) {
+             AssertJUnit.assertTrue( "Yahoo Found", true);
          } else {
-             AssertJUnit.assertTrue("Failed: Link not found",false );
+             AssertJUnit.assertTrue("Failed: Yahoo not found",false );
          }
 
      }
