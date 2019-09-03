@@ -23,7 +23,7 @@ public class TestGridRegression {
 		 System.out.println("getClass "+this.getClass()); 
 		 System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite"));
 		 System.out.println("System.getProperty(suiteXmlFile) "+System.getProperty("surefire.suiteXmlFiles")); 
-		 baseURL = "http://yahoo.com";
+		 baseURL = "http://18.219.72.36:9999/eduapp/";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
          capability.setBrowserName("chrome");
@@ -40,11 +40,12 @@ public class TestGridRegression {
      public void sampleTest() {
          driver.get(baseURL);
          
-         System.out.println("driver.getPageSource().contains(\"Yahoo\") "+driver.getPageSource().contains("Yahoo")); 
-         if (driver.getPageSource().contains("Yahoo")) {
-             AssertJUnit.assertTrue( "Yahoo Found", true);
+         System.out.println("driver.getPageSource() "+driver.getPageSource().contains("First Name")); 
+         System.out.println("driver.getPageSource().contains(\"First Name\") "+driver.getPageSource().contains("First Name")); 
+         if (driver.getPageSource().contains("First Name")) {
+             AssertJUnit.assertTrue( "First Name", true);
          } else {
-             AssertJUnit.assertTrue("Failed: Yahoo not found",false );
+             AssertJUnit.assertTrue("Failed: First Name not found",false );
          }
 
      }

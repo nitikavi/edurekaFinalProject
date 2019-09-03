@@ -24,7 +24,7 @@ public class TestGridIntegration {
 		System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
 		System.out.println("System.getProperty(testSuite) "+System.getProperty("surefire.suiteXmlFiles")); 
 
-		 baseURL = "http://www.youtube.com";
+		 baseURL = "http://18.219.72.36:9999/eduapp/";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
          capability.setBrowserName("chrome");
@@ -40,12 +40,12 @@ public class TestGridIntegration {
      @Test
      public void sampleTest() {
          driver.get(baseURL);
-         System.out.println("driver.getCurrentUrl() "+driver.getCurrentUrl()); 
-         System.out.println("driver.getPageSource().contains(\"YouTube\") "+driver.getPageSource().contains("YouTube")); 
-         if (driver.getPageSource().contains("YouTube")) {
-             AssertJUnit.assertTrue( "YouTube Found", true);
+         System.out.println("driver.getTitle() "+driver.getTitle()); 
+         System.out.println("driver.getTitle().contains(\"EduApp Registration Form\") "+driver.getTitle().contains("EduApp Registration Form")); 
+         if (driver.getTitle().contains("EduApp Registration Form")) {
+             AssertJUnit.assertTrue( "EduApp Registration Form", true);
          } else {
-             AssertJUnit.assertTrue("Failed: YouTube not found",false );
+             AssertJUnit.assertTrue("Failed: EduApp Registration Form",false );
          }
 
      }
