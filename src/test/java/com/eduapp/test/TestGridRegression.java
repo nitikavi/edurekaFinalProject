@@ -26,6 +26,7 @@ public class TestGridRegression {
          capability.setBrowserName("chrome");
          capability.setPlatform(Platform.LINUX);
          driver = new RemoteWebDriver(new URL(nodeURL), capability);
+         System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite"));
      }
 
      @AfterTest
