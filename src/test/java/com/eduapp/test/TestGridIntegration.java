@@ -42,10 +42,10 @@ public class TestGridIntegration {
          driver.get(baseURL);
          
 
-         if (driver.getPageSource().contains("MOBILE TESTING")) {
-             AssertJUnit.assertTrue( "Mobile Testing Link Found", true);
+         if (driver.getPageSource().contains("Amazon")) {
+             AssertJUnit.assertTrue( "Amazon Found", true);
          } else {
-             AssertJUnit.assertTrue("Failed: Link not found",false );
+             AssertJUnit.assertTrue("Failed: Amazon not found",false );
          }
 
      }
