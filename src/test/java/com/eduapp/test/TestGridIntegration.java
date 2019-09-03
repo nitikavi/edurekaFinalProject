@@ -20,13 +20,16 @@ public class TestGridIntegration {
 
 	@BeforeTest
      public void setUp() throws MalformedURLException {
-         baseURL = "http://amazon.com";
+		 System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
+			System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
+
+		 baseURL = "http://amazon.com";
          nodeURL = "http://3.17.73.82:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
          capability.setBrowserName("chrome");
          capability.setPlatform(Platform.LINUX);
          driver = new RemoteWebDriver(new URL(nodeURL), capability);
-         System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite"));
+         
      }
 
      @AfterTest

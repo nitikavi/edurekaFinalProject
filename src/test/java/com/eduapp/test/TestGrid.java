@@ -20,7 +20,9 @@ public class TestGrid {
 
 	@BeforeTest
      public void setUp() throws MalformedURLException {
-		System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite")); 
+		System.out.println("System.getProperty(testSuite) "+System.getProperty("testSuite"));
+		System.out.println("System.getProperty(testSuite) "+System.getProperty("suiteXmlFile")); 
+
 		baseURL = "http://demo.guru99.com/test/guru99home/";
          nodeURL = "http://13.58.169.106:4444/wd/hub";
          DesiredCapabilities capability = DesiredCapabilities.chrome();
