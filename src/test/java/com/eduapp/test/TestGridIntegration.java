@@ -42,10 +42,10 @@ public class TestGridIntegration {
          driver.get(baseURL);
          System.out.println("driver.getCurrentUrl() "+driver.getCurrentUrl()); 
          System.out.println("driver.getPageSource().contains(\"YouTube\") "+driver.getPageSource().contains("YouTube")); 
-         if (driver.getPageSource().contains("Amazon")) {
-             AssertJUnit.assertTrue( "Amazon Found", true);
+         if (driver.getPageSource().contains("YouTube")) {
+             AssertJUnit.assertTrue( "YouTube Found", true);
          } else {
-             AssertJUnit.assertTrue("Failed: Amazon not found",false );
+             AssertJUnit.assertTrue("Failed: YouTube not found",false );
          }
 
      }
