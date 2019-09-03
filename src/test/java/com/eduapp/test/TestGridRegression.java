@@ -38,7 +38,7 @@ public class TestGridRegression {
      public void sampleTest() {
          driver.get(baseURL);
          
-
+         System.out.println("driver.getPageSource().contains(\"Yahoo\") "+driver.getPageSource().contains("Yahoo")); 
          if (driver.getPageSource().contains("Yahoo")) {
              AssertJUnit.assertTrue( "Yahoo Found", true);
          } else {
