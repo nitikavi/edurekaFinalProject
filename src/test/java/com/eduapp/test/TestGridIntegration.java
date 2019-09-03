@@ -40,7 +40,7 @@ public class TestGridIntegration {
      @Test
      public void sampleTest() {
          driver.get(baseURL);
-         
+         System.out.println("driver.getCurrentUrl() "+driver.getCurrentUrl()); 
          System.out.println("driver.getPageSource().contains(\"Amazon\") "+driver.getPageSource().contains("Amazon")); 
          if (driver.getPageSource().contains("Amazon")) {
              AssertJUnit.assertTrue( "Amazon Found", true);
