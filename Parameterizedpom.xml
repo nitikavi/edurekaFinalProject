@@ -59,7 +59,7 @@
 				<version>2.19.1</version>
 				 <configuration>
         	     	<suiteXMLFiles>
-        		 		<suiteXMLFile>${suiteXmlFile}</suiteXMLFile>
+        		 		<suiteXMLFile>regressiontestng.xml</suiteXMLFile>
 		      	    </suiteXMLFiles>
         		</configuration>
 			</plugin>
