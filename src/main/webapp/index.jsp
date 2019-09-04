@@ -34,6 +34,6 @@
 					<td>Contact No</td>
 					<td><input type="text" name="contact" /></td>
 				</tr></table>
-			<input type="submit" value="Submit" /></form>
+			<input type="submit" value="Enter" /></form>
 </body>
 </html>
