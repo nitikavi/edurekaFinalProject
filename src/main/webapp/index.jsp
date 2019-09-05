@@ -15,7 +15,7 @@
 					<td><input type="text" name="first_name" /></td>
 				</tr>
 				<tr>
-					<td>SurName</td>
+					<td>Last Name</td>
 					<td><input type="text" name="last_name" /></td>
 				</tr>
 				<tr>
