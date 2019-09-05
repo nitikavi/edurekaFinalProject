@@ -27,7 +27,7 @@
 					<td><input type="password" name="password" /></td>
 				</tr>
 				<tr>
-					<td>Address</td>
+					<td>Home Address</td>
 					<td><input type="text" name="address" /></td>
 				</tr>
 				<tr>
